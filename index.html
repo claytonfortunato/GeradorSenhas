@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de senhas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+      <div class="result">
+        <div>Genereted password</div>
+      </div>
+      <div class="lenght_slider" data-min="4" data-max="32">
+        <div class="title_lenght">Lenght:</div>
+        <input id="slide" type="range" min="4" max="32" value="16" />
+      </div>
+
+      <div class="check_input">
+        <span>Options</span>
+        <div class="group_inputs">
+          <p>Letra Maiúscula</p>
+          <label class="toggle">
+            <input type="checkbox" />
+            <span class="switch"></span>
+          </label>
+        </div>
+        <div class="group_inputs">
+          <p>Letra Minúscula</p>
+          <label class="toggle">
+            <input type="checkbox" />
+            <span class="switch"></span>
+          </label>
+        </div>
+        <div class="group_inputs">
+          <p>Números</p>
+          <label class="toggle">
+            <input type="checkbox" />
+            <span class="switch"></span>
+          </label>
+        </div>
+        <div class="group_inputs">
+          <p>Símbolos</p>
+          <label class="toggle">
+            <input type="checkbox" />
+            <span class="switch"></span>
+          </label>
+        </div>
+      </div>
+
+      <button class="btn_generate">Generate Password</button>
+    </div>
+  </body>
+</html>
